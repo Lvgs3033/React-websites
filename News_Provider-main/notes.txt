@@ -1,0 +1,23 @@
+ {/* col md-4 means it will take 4column there are 12 columns grid in bootstrap take full space of container key={element.url} */}
+
+
+    //props cannot be change but state can. pass props and change state props are readonly 
+        //state we use when we want to change something again and again without load.
+
+        //life cycle method componentDidMount run after render
+
+
+        // let url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=7fab6755096648f5b1ffa73ff0dd3b3d&page=1pageSize=20";
+
+        https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=dbe57b028aeb41e285a226a94865f7a7&page=${this.state.page + 1}&pageSize=${this.props.pageSize}
+
+        https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=dbe57b028aeb41e285a226a94865f7a7&page=${this.state.page - 1}&pageSize=${this.props.pageSize}
+
+        https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=dbe57b028aeb41e285a226a94865f7a7&page=${this.state.page + 1}&pageSize=${this.props.pageSize}
+
+
+        tyle={{margin: '40px 0px'}} two one for js and one for object bracet
+
+        style={{width: "18rem"}}
+
+        

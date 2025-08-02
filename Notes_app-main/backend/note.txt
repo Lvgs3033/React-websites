@@ -1,0 +1,38 @@
+// const express = require('express');
+// const User = require('../models/User');
+// const router = express.Router();
+
+// // Create a User using: POST "/api/auth". Doesn't require Auth
+// router.post('/',[body('name').isLenght({min:3}),
+//       body('email').isEmail(),
+
+//       ], async (req, res) => {
+//     try {
+//         console.log("Request body:", req.body);
+
+//         const user = new User(req.body); // Create a new User instance
+//         const savedUser = await user.save(); // Save the user to the database
+
+//         res.status(201).json(savedUser); // Send back the saved user data with a 201 Created status
+//     } catch (error) {
+//         // Check for duplicate key error (e.g., email already exists)
+//         if (error.code === 11000 && error.keyPattern.email) {
+//             res.status(400).json({ error: "Email already exists. Please use a different email." });
+//         } else {
+//             console.error("Error saving user:", error);
+//             res.status(500).json({ error: "Internal Server Error" });
+//         }
+//     }
+// });
+
+// module.exports = router;
+
+
+User.js //User.createIndexes();
+
+
+{
+  "titel": "My yiyle",
+  "description": "Please wake up early",
+  "tag": "personal"
+}
